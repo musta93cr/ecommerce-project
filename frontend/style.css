@@ -112,3 +112,57 @@ nav a {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer li {
+    margin-bottom: 10px;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+
+}
+.footer a:hover {
+   color: red;
+   transition: 0.3s;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
