@@ -37,10 +37,19 @@ nav a {
 
 .header-actions {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 }
+.header-actions a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
 
+.header-actions a:hover {
+    color: #2563eb;
+    transition: 0.3s;
+}
 .header-actions input {
     padding: 8px;
 }
@@ -156,7 +165,7 @@ nav a {
   margin-bottom: 15px;
 }
 .special-offer {
-    background-color: #2563eb;
+    background-color: #6f91d8;
     color: white;
     text-align: center;
     padding: 70px 20px;
@@ -231,10 +240,22 @@ button:hover {
 }
 @media (max-width: 768px) {
 
-  header .container {
+  header .actions {
     flex-direction: column;
+    width: 100%;
     gap: 20px;
   }
+  .header-actions input {
+        width: 100%;
+    }
+.header-actions button {
+        width: 100%;
+    }
+
+    .header-actions a {
+        font-size: 16px;
+    }
+
 
   nav ul {
     flex-direction: column;
@@ -252,6 +273,13 @@ button:hover {
   }
 
 }
+.header-actions button {
+    width: 100%;
+  }
+
+  .header-actions a {
+    font-size: 16px;
+  }
 @media (max-width: 768px) {
 
   .hero h2 {
@@ -293,7 +321,7 @@ button:hover {
 }
 @media (max-width: 768px) {
 
-  .footer-grid {
+  .footer {
     grid-template-columns: 1fr;
     text-align: center;
   }
