@@ -155,6 +155,38 @@ nav a {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.special-offer {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    margin-top: 60px;
+}
+
+.special-offer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.special-offer p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.special-offer button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.special-offer button:hover {
+    opacity: 0.85;
+    transition: 0.3s;
+}
 .footer {
     background: #333;
     color: #fff;
@@ -251,6 +283,13 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
+}
+.special-offer h2 {
+    font-size: 28px;
+}
+
+.special-offer p {
+    font-size: 16px;
 }
 @media (max-width: 768px) {
 
