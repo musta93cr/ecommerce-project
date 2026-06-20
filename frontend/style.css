@@ -238,6 +238,53 @@ button:hover {
     opacity: 0.8;
     transition: 0.3s;
 }
+.cart {
+    padding: 40px 0;
+    text-align: center;
+}
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.cart-item button {
+    padding: 5px ;
+    cursor: pointer;
+}
+.cart-item button:hover {
+    color: black;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.cart-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cart-total button {
+    padding: 10px 20px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 @media (max-width: 768px) {
 
   header .actions {
@@ -327,3 +374,20 @@ button:hover {
   }
 
 }
+
+@media (max-width: 768px) {
+   .cart-item {       
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+       cursor:pointer;
+    }
+    .cart-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+} 
+ 
+
